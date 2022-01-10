@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Application Form</title>
+	
+</head>
+<style>
+	@import url(style_sheet_all.css)
+</style>
+<header>
+<p>Summer 2022 Application Form</p>
+</header>
+<body>
+<head>
+<a href="index.html">Return to home page</a>
+</head>
+<form action = "mailto:n_o_rosenfeld@yahoo.com" method="post" enctype="text/plain">
+<fieldset>
+	<legend>Name and Address of Student Applying</legend>
+	<ul>
+		<li><label>First Name<input type="text" name="applicant_first_name"></label></li>
+		<li><label>Last Name<input type="text" name="applicant_last_name"></label></li>
+		<li><label>Address - Street and Number<input type="text" name="applicant_address"></label></li>
+		<li><label>City<input type="text" name="applicant_city"></label></li>
+		<li><label>State<input type="text" name="applicant_state" value="MO"></label></li>
+	</ul>
+</fieldset>
+<fieldset>
+	<legend>Name and Address of Parent<br>Info is for parent or other adult who will be responsible for payment</legend>
+		<ul>
+		<li><label>First Name<input type="text" name="parent_first_name"></label></li>
+		<li><label>Last Name<input type="text" name="parent_last_name"></label></li>
+		<li><label>Address - Street and Number<input type="text" name="parent_address"></label></li>
+		<li><label>City<input type="text" name="parent_city"></label></li>
+		<li><label>State<input type="text" name="parent_state" value="MO"></label></li>
+		</ul>
+</fieldset>
+<fieldset>
+	<legend>Last grade completed</legend>
+		<ul>
+		<li><label><input type="radio" name="grade_level">8th</label></li>
+		<li><label><input type="radio" name="grade_level">9th</label></li>
+		<li><label><input type="radio" name="grade_level">10th</label></li>
+		<li><label><input type="radio" name="grade_level">11th</label></li>
+		</ul>
+</fieldset>
+<fieldset>
+	<legend>Classes applying to</legend>
+		<ul><li><label for="classes_applying">Classes applying to</label></li>
+		<select id="classes_applying" name="classes" multiple>
+		<option>American Literature</option>
+		<option>English Literature</option>
+		<option>Conversational Spanish</option>
+		<option>Algebra I</option>
+		<option>Algebra II</option>
+		<option>Trigonometry</option>
+		<option>Chemistry</option></select></ul>
+</fieldset>
+<fieldset>
+	<legend>References</legend>
+	<ul>
+	<li><label for="references">Please provide <b>two</b> names and phone numbers, their position and the reason they know your child.</label></li>
+	<textarea id="references" name="references" rows="8" cols="64"></textarea></ul>
+</fieldset>
+<fieldset>
+	<legend>Consent</legend>
+	<ul>
+	<li><input type="checkbox" name="ok_to_call_references"><label>Check here if it's ok to speak to references about your child</label></li>
+	<li><input type="checkbox" name="consent_to_agreement form"><label>Check here to confirm that you agree to our <a href="fin_agree.html">financial agreement </a></label></li>
+	</ul>
+	
+</fieldset>
+<fieldset>
+	<input type="submit" name="Submit">
+	<input type="reset" value="Reset">
+</fieldset>
+
+
+</form>
+</body>
+</html>

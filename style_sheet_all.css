@@ -1,0 +1,57 @@
+body {
+	background-color: #faf2e4;
+	margin: 0 15%;
+	font-family:Arial, sans=serif;
+	color:teal;
+}
+
+header{
+	margin-top:1;
+	padding: 3em 1em 2em 1em;
+	text-align:center;
+	text-style:bold;
+	color: green;
+	background: url(images/frog.jpg);
+	background-position: center right;
+	background-repeat: no-repeat;
+	background-size: 20%;
+}
+header p{
+	font-family:Arial, sans-serif;
+	font-size:2em;
+}
+
+img{
+	max-width: 50%;
+	height:auto;
+	vertical-align:middle;
+	
+}
+
+h1{
+	text-align: center;
+	text-style:bold;
+	color:green;
+	clear:left;
+	vertical-align:middle;
+	
+}
+
+a{
+	color:green;
+}
+@media screen and (min-width: 700px){
+	
+		img{
+			float: left;
+		}
+		video{
+			float:left;
+		}
+}
+@media screen and (min-width: 940px){
+	.column{
+		float:left;
+		width: 33.3%;
+	}
+}
